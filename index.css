@@ -318,6 +318,8 @@
 }
 .menuItem{
     display: flex;
+    cursor: pointer;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -325,6 +327,15 @@
 }
 
 .conteudo {
-    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
     height: 300px;
+}
+
+.conteudoHome {
+    display: flex;
+    /*background-image: url(./img/letreiro1.jpeg);*/
+    width: 50%;
+    height: 200px;
 }
