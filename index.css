@@ -329,13 +329,156 @@
 .conteudo {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background-color: rgb(236, 236, 236);
-    height: 300px;
+    height: 100%;
 }
 
 .conteudoHome {
     display: flex;
+    justify-content: center;
     /*background-image: url(./img/letreiro1.jpeg);*/
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 300px;
+}
+@media (max-width:500px) {
+    .conteudoHome {
+        height: 150px;
+    }
+}
+
+@media (max-width: 220px) {
+    .conteudoHome {
+        height: 90px;
+    }
+}
+
+.conteudoHomeCentral {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    justify-content: center;
+    
+    background-image: url(./img/recepcao1.jpeg);
+}
+
+@media (max-width:500px) {
+    .conteudoHomeCentral {
+        font-size: 25px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 220px) {
+    .conteudoHomeCentral {
+        font-size: 10px;
+        height: 90px;
+    }
+}
+.barraSimbolos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .barraSimbolos {
+        height: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .barraSimbolos {
+        height: 60px;
+    }
+}
+@media (max-width: 360px) {
+    .barraSimbolos {
+        height: 30px;
+    }
+}
+.icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+    height: 95%;
+    width: 10%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+@media (max-width: 600px) {
+    .icones {
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .icones {
+        font-size: 5px;
+    }
+}
+.icone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 600px) {
+    .icone {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (max-width: 360px) {
+    .icone {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+.teste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.copyright {
+    font-size: 12px;
+}
+.referencia {
+    font-size: 10px;
 }
