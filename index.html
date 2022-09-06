@@ -55,7 +55,7 @@
     </div>
     <div class="menu">
         <div class="menuItem menuItemHome"    onmouseclick="alteraCorBotao('menuItemHome')"    onmouseenter="alteraCorBotao('menuItemHome')"    onmouseout="voltaCor('menuItemHome')">    HOME</div>
-        <div class="menuItem menuItemQuartos" onmouseclick="alteraCorBotao('menuItemQuartos')" onmouseenter="alteraCorBotao('menuItemQuartos')" onmouseout="voltaCor('menuItemQuartos')"> QUARTOS</div>
+        <div class="menuItem menuItemQuartos" onmouseclick="alteraCorBotao('menuItemQuartos')" onmouseenter="alteraCorBotao('menuItemQuartos')" onmouseout="voltaCor('menuItemQuartos')"> <a class="linkQuartos" href="#idQuartos">QUARTOS</a> </div> 
         <div class="menuItem menuItemLocal"   onmouseclick="alteraCorBotao('menuItemLocal')"   onmouseenter="alteraCorBotao('menuItemLocal')"   onmouseout="voltaCor('menuItemLocal')">   LOCAL</div>
         <div class="menuItem menuItemReserva" onmouseclick="alteraCorBotao('menuItemReserva')" onmouseenter="alteraCorBotao('menuItemReserva')" onmouseout="voltaCor('menuItemReserva')"> RESERVA</div>
     </div>
@@ -98,12 +98,15 @@
                 <div class="icone">
                     <img src="icons/recepcao.png" alt="">
                 </div>
-            </div>
-            
-            
+            </div>        
         </div>
-        <div class="conteudoQuartos">
-            
+        <div class="conteudoQuartos" id="idQuartos">
+            <figure class="quarto quartoCasal"          onclick="janelaQuartos('2Solteiros')"><b>Casal</b> </figure>
+            <figure class="quarto quartoCasal1Solteiro "onclick="janelaQuartos('2Solteiros')"><b>Casal e 1 Solteiro</b></figure>
+            <figure class="quarto quarto2Solteiros"     onclick="janelaQuartos('2Solteiros')"><b>2 Solteiros</b></figure>
+            <figure class="quarto quartoCasal2Solteiros"onclick="janelaQuartos('2Solteiros')"><b>Casal e 2 solteiros</b></figure>
+            <figure class="quarto quartoSolteiro"       onclick="janelaQuartos('2Solteiros')"><b>Solteiro</b></figure>
+            <figure class="quarto quartoOutros"         onclick="janelaQuartos('2Solteiros')"><b>Outros</b></figure>
         </div>
     </div>
     <footer>

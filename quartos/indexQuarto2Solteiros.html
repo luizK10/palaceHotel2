@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartos Palace Hotel</title>
+</head>
+<body>
+
+    <div>
+    <ul class="slider">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="../img/quarto7.jpeg" alt="">
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide" checked>
+            <label for="slide2"></label>
+            <img src="../img/quarto2.jpeg" alt="">
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide" checked>
+            <label for="slide3"></label>
+            <img src="../img/quarto3.jpeg" alt="">
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide" checked>
+            <label for="slide4"></label>
+            <img src="../img/quarto4.jpeg" alt="">
+        </li>
+        <li>
+            <input type="radio" id="slide5" name="slide" checked>
+            <label for="slide5"></label>
+            <img src="../img/quarto5.jpeg" alt="">
+        </li>
+        <li>
+            <input type="radio" id="slide6" name="slide" checked>
+            <label for="slide6"></label>
+            <img src="../img/quarto6.jpeg" alt="">
+        </li>
+    </ul>
+    </div>
+    
+    <style>
+
+        *{
+            margin: 1px;
+            padding: 0px;
+        }
+
+        .slider {
+            list-style: none;
+            display: block;
+            height: 300px;
+            width: 600px;
+            margin-top: 20px;
+            /*position: absolute;*/
+        }
+
+        .slider li {
+            list-style: none;
+            position: absolute;
+        }
+
+        .slider img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .slider label {
+            display: flex;
+            bottom: 10px;
+            cursor: pointer;
+            display: block;
+            height: 40px;
+            width: 70px;
+            position: absolute;
+            z-index: 10;
+            background-size: contain;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+        }
+
+        .slider li:nth-child(1) label {            
+            left: 10px;
+            background-image: url(../img/quarto7.jpeg);        
+        }
+        .slider li:nth-child(2) label {
+            left: 110px;
+            background-image: url(../img/quarto2.jpeg);
+        }
+        .slider li:nth-child(3) label {
+            left: 210px;
+            background-image: url(../img/quarto3.jpeg);
+        }
+        .slider li:nth-child(4) label {
+            left: 310px;
+            background-image: url(../img/quarto4.jpeg);
+        }
+        .slider li:nth-child(5) label {
+            left: 410px;
+            background-image: url(../img/quarto5.jpeg);
+        }
+        .slider li:nth-child(6) label {
+            left: 510px;
+            background-image: url(../img/quarto6.jpeg);
+        }
+
+        .slider img {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+    </style>
+    
+    
+</body>
+</html>
+
+
+
+<!-- botão whatsapp
+<a href='https://api.whatsapp.com/send?phone=5549991596632&text=Ol%C3%A1.%20Gostaria%20de%20fazer%20uma%20reserva.'> <input class='contato' type='button' value='Whatsapp'> <style> .contato { border-style: solid;border-color: white;border-radius: 50% 50% 2% 50%;font-size: 40px;height: 200px;width: 200px;color: white;background-color: rgb(45, 230, 28);}</style>
+-->
+

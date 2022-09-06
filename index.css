@@ -326,6 +326,15 @@
     width: 20%;
 }
 
+.linkQuartos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
 .conteudo {
     display: flex;
     justify-content: center;
@@ -359,7 +368,6 @@
     width: 100%;
     height: 300px;
     background-size: cover;
-    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-align: center;
@@ -450,6 +458,75 @@
         width: 15px;
     }
 }
+
+.conteudoQuartos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 196, 177);
+    background-size: cover;
+}
+.quarto {
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    color: white;
+    text-shadow: black 0.1em 0.0em 0.1em;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .quarto {
+    margin: 7px;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .quarto {
+    margin: 5px;
+    font-size: 15px;
+    width: 150px;
+    height: 70px;
+    }
+}
+
+.quartoCasal {
+    background-image: url(./img/quarto.jpeg);
+}
+.quartoCasal1Solteiro {
+    background-image: url(./img/quarto2.jpeg);
+}
+
+.quarto2Solteiros {
+    background-image: url(./img/quarto3.jpeg);
+}
+
+.quartoCasal2Solteiros {
+    background-image: url(./img/quarto4.jpeg);
+}
+
+.quartoSolteiro {
+    background-image: url(./img/quarto5.jpeg);
+}
+
+.quartoOutros {
+    background-image: url(./img/quarto6.jpeg);
+}
+
+
+
+
+
 
 
 
