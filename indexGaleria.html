@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Palace Hotel</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.js">
+</head>
+<body  onload="siteEmConstrucao()">
+
+
+
+    <div class="contatos">
+        <div class="telefone">
+            <img src="./icons/call_FILL0_wght400_GRAD0_opsz24(1).png" alt="" class="iconeContato">(049) 3644 1748
+        </div>
+        <div class="smartphone">
+            <img src="./icons/smartphone_FILL0_wght400_GRAD0_opsz24.png" alt="" class="iconeContato">(049)9 9159-6632
+        </div>
+        
+    </div>
+    <div class="divisoria"></div>
+    <div class="containerSuperior">
+        <div class="simbolo">
+            <div class="janela">
+                <div class="janelaCima">
+                    <div class="janelaSuperior"></div>
+                    <div class="janelaSuperior"></div>
+                </div>
+                <div class="janelaBaixo">
+                    <div class="janelaInferior"></div>
+                    <div class="janelaInferior"></div>
+                </div>
+            </div>
+
+            <div class="janelaRedonda">
+                <div class="circuloMaior">
+                    <div class="circuloMenor"></div>
+                </div>
+                <div class="circuloMaior">
+                    <div class="circuloMenor"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="titulo" id="idHome"><b>PALACE HOTEL</b>
+        </div>
+    </div>
+
+    <div class="menu" id="idMenu">
+        <div class="menuItem menuItemHome"    onmouseclick="alteraCorBotao('menuItemHome')"    onmouseenter="alteraCorBotao('menuItemHome')"    onmouseout="voltaCor('menuItemHome')">    <a class="linkMenu" href="./index.html#idHome">   HOME     </a> </div>
+        <div class="menuItem menuItemQuartos" onmouseclick="alteraCorBotao('menuItemQuartos')" onmouseenter="alteraCorBotao('menuItemQuartos')" onmouseout="voltaCor('menuItemQuartos')"> <a class="linkMenu" href="./index.html#idQuartos">QUARTOS  </a> </div> 
+        <div class="menuItem menuItemLocal"   onmouseclick="alteraCorBotao('menuItemLocal')"   onmouseenter="alteraCorBotao('menuItemLocal')"   onmouseout="voltaCor('menuItemLocal')">   <a class="linkMenu" href="./index.html#idLocal">  LOCAL    </a> </div>
+        <div class="menuItem menuItemReserva" onmouseclick="alteraCorBotao('menuItemReserva')" onmouseenter="alteraCorBotao('menuItemReserva')" onmouseout="voltaCor('menuItemReserva')"> <a class="linkMenu" href="./index.html#idReserva">RESERVA  </a> </div>
+        <div class="menuItem menuItemGaleria" onmouseclick="alteraCorBotao('menuItemGaleria')" onmouseenter="alteraCorBotao('menuItemGaleria')" onmouseout="voltaCor('menuItemGaleria')"> <a class="linkMenu" href="#idGaleria">            GALERIA  </a> </div>
+    </div>
+    
+    <div class="containerGaleria">
+
+        <figure class="imgGaleria imgGaleria1"  onclick="abreImg('img/bernardo.jpeg')">                </figure>
+        <figure class="imgGaleria imgGaleria2"  onclick="abreImg('img/capelaBarracao.jpeg')" >         </figure>
+        <figure class="imgGaleria imgGaleria3"  onclick="abreImg('img/cozinha.jpeg')" >                </figure>
+        <figure class="imgGaleria imgGaleria4"  onclick="abreImg('img/dionisioNoite.jpeg')" >          </figure>
+        <figure class="imgGaleria imgGaleria5"  onclick="abreImg('img/euAmoDionisioCerqueira.jpeg')" > </figure>
+        <figure class="imgGaleria imgGaleria6"  onclick="abreImg('img/faixada2.jpeg')" >               </figure>
+        <figure class="imgGaleria imgGaleria7"  onclick="abreImg('img/IMG_20220826_101718.jpg')" >     </figure>
+        <figure class="imgGaleria imgGaleria8"  onclick="abreImg('img/faixada6.jpg')" >                </figure>
+        <figure class="imgGaleria imgGaleria9"  onclick="abreImg('img/IMG_20220826_102024.jpg')" >     </figure>
+        <figure class="imgGaleria imgGaleria10" onclick="abreImg('img/faixada3.jpeg')" >               </figure>
+        <figure class="imgGaleria imgGaleria11" onclick="abreImg('img/IMG_20220826_102024.jpg')" >     </figure>
+        <figure class="imgGaleria imgGaleria12" onclick="abreImg('img/IMG_20220826_102853.jpg')" >     </figure>
+        <figure class="imgGaleria imgGaleria13" onclick="abreImg('img/IMG_20220826_165830.jpg')" >     </figure>
+        <figure class="imgGaleria imgGaleria14" onclick="abreImg('img/letreiro1.jpeg')" >              </figure>
+        <figure class="imgGaleria imgGaleria15" onclick="abreImg('img/quarto.jpeg')" >                 </figure>
+        <figure class="imgGaleria imgGaleria16" onclick="abreImg('img/quarto2.jpeg')" >                </figure>
+        <figure class="imgGaleria imgGaleria17" onclick="abreImg('img/quarto3.jpeg')" >                </figure>
+        <figure class="imgGaleria imgGaleria18" onclick="abreImg('img/quarto4.jpeg')">                 </figure>
+        <figure class="imgGaleria imgGaleria19" onclick="abreImg('img/quarto5.jpeg')">                 </figure>
+        <figure class="imgGaleria imgGaleria20" onclick="abreImg('img/quarto6.jpeg')">                 </figure>
+        <figure class="imgGaleria imgGaleria21" onclick="abreImg('img/quarto7.jpeg')">                 </figure>
+        <figure class="imgGaleria imgGaleria22" onclick="abreImg('img/recepcao.jpeg')">                </figure>
+        <figure class="imgGaleria imgGaleria23" onclick="abreImg('img/recepcao1.jpeg')">               </figure>
+        <figure class="imgGaleria imgGaleria24" onclick="abreImg('img/recepcao2.jpeg')">               </figure>
+        <figure class="imgGaleria imgGaleria25" onclick="abreImg('img/recepcao4.jpg')">                </figure>
+        <figure class="imgGaleria imgGaleria26" onclick="abreImg('img/recepcao5.jpeg')">               </figure>
+        <figure class="imgGaleria imgGaleria27" onclick="abreImg('img/recepcao7.jpg')">                </figure>
+        <figure class="imgGaleria imgGaleria28" onclick="abreImg('img/recepcaoSofa.jpeg')">            </figure>
+        <figure class="imgGaleria imgGaleria29" onclick="abreImg('img/triplice.jpeg')">                </figure>  
+
+    </div>
+
+
+
+    <footer>
+        <div class="copyright">Copyright (2022) - Luiz A. K. Ferrarese</div>
+            <div class="referencia">
+                <a href="creditos.html">Créditos</a>
+                
+                
+            </div>
+        
+    </footer>
+</body>
+</html>

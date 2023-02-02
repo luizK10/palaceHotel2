@@ -295,6 +295,7 @@
 
 .menu {
     display: flex;
+    
     justify-content: center;
     margin-right: 5%;
     background-color: white;
@@ -303,6 +304,30 @@
     border-radius: 15px;
     font-family: 'Paytone One', sans-serif;
     color: rgb(104, 104, 104);
+}
+
+@keyframes GoStatic { /*cria animacao e atribui nome*/
+    from {              /* from (de) to (1) */
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.menu.static {       /* só fucniona onde tem essas duas classes juntas*/
+    position: fixed;
+    top: 27px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+
+    animation-name: GoStatic; /*dados da animação */
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
 }
 @media (max-width: 376px) {
     .menu {
@@ -318,6 +343,7 @@
 }
 .menuItem{
     display: flex;
+
     cursor: pointer;
     border-radius: 10px;
     justify-content: center;
@@ -326,7 +352,7 @@
     width: 20%;
 }
 
-.linkQuartos {
+.linkMenu {
     display: flex;
     width: 100%;
     height: 100%;
@@ -335,6 +361,122 @@
     color: rgb(104, 104, 104);
     text-decoration: none;
 }
+
+.containerGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    /*background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));*/
+}
+
+                        .imgGaleria {
+                            display: flex;
+                            background-size: cover;
+                            cursor: pointer;
+                            width: 300px;
+                            height: 200px;
+                            margin: 15px;
+                        }
+
+                                        .imgGaleria1  {
+                                            background-image: url(img/bernardo.jpeg);
+                                        }
+                                        .imgGaleria2  {
+                                            background-image: url(img/capelaBarracao.jpeg);
+                                        }
+                                        .imgGaleria3  {
+                                            background-image: url(img/cozinha.jpeg);
+                                        }
+                                        .imgGaleria4  {
+                                            background-image: url(img/dionisioNoite.jpeg);
+                                        }
+                                        .imgGaleria5  {
+                                            background-image: url(img/euAmoDionisioCerqueira.jpeg);
+                                        }
+                                        .imgGaleria6  {
+                                            background-image: url(img/faixada2.jpeg);
+                                        }
+                                        .imgGaleria7  {
+                                            background-image: url(img/IMG_20220826_101718.jpg);
+                                        }
+                                        .imgGaleria8  {
+                                            background-image: url(img/faixada6.jpg);
+                                        }
+                                        .imgGaleria9  {
+                                            background-image: url(img/IMG_20220826_102024.jpg);
+                                        }
+                                        .imgGaleria10 {
+                                            background-image: url(img/faixada3.jpeg);
+                                        }
+                                        .imgGaleria11 {
+                                            background-image: url(img/IMG_20220826_102024.jpg);
+                                        }
+                                        .imgGaleria12 {
+                                            background-image: url(img/IMG_20220826_102853.jpg);
+                                        }
+                                        .imgGaleria13 {
+                                            background-image: url(img/IMG_20220826_165830.jpg);
+                                        }        
+                                        .imgGaleria14 {
+                                            background-image: url(img/letreiro1.jpeg);
+                                        }
+                                        .imgGaleria15 {
+                                            background-image: url(img/quarto.jpeg);
+                                        }
+                                        .imgGaleria16 {
+                                            background-image: url(img/quarto2.jpeg);
+                                        }
+                                        .imgGaleria17 {
+                                            background-image: url(img/quarto3.jpeg);
+                                        }
+                                        .imgGaleria18 {
+                                            background-image: url(img/quarto4.jpeg);
+                                        }
+                                        .imgGaleria19 {
+                                            background-image: url(img/quarto5.jpeg);
+                                        }
+                                        .imgGaleria20 {
+                                            background-image: url(img/quarto6.jpeg);
+                                        }
+                                        .imgGaleria21 {
+                                            background-image: url(img/quarto7.jpeg);
+
+                                        }.imgGaleria22 {
+                                            background-image: url(img/recepcao.jpeg);
+                                        }
+
+                                        .imgGaleria23 {
+                                            background-image: url(img/recepcao1.jpeg);
+                                        }
+
+                                        .imgGaleria24 {
+                                            background-image: url(img/recepcao2.jpeg);
+                                        }
+
+                                        .imgGaleria25 {
+                                            background-image: url(img/recepcao4.jpg);
+                                        }
+
+                                        .imgGaleria26 {
+                                            background-image: url(img/recepcao5.jpeg);
+                                        }
+
+                                         .imgGaleria27 {
+                                            background-image: url(img/recepcao7.jpg);
+                                        }
+
+                                        .imgGaleria28 {
+                                            background-image: url(img/recepcaoSofa.jpeg);
+                                        }
+
+                                        .imgGaleria29 {
+                                            background-image: url(img/triplice.jpeg);
+                                        }
+
+
+
+
+
+
 .conteudo {
     display: flex;
     justify-content: center;
@@ -465,7 +607,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    background-color: rgb(82, 196, 177);
+    background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));
     background-size: cover;
 }
 .quarto {
@@ -523,17 +665,266 @@
     background-image: url(./img/quarto6.jpeg);
 }
 
+.conteudoLocal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    margin: 3px;
+}
+
+.localizacao {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    text-shadow: black 0.1em 0.0em 0.2em;
+}
+
+
+.localTitulo {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+@media (max-width: 600px) {
+    .localTitulo {
+        font-size: 20px;
+    }
+}
+@media (max-width: 340px) {
+    .localTitulo {
+        font-size: 15px;
+    }
+}
+.divIconeMapa { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconeMapa {
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.textoLocal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: black 0.1em 0.0em 0.2em;
+    margin: 15px;
+}
+@media (max-width: 600px) {
+    .textoLocal {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .textoLocal {
+        font-size: 10px;
+    }
+}
+
+.divMapa {
+    display: flex;
+    justify-items: center;
+    width: 49%;
+    height: 100%;
+    border-left: 2px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(104, 104, 104);    
+}
+
+.mapa {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
 
 
 
 
+.conteudoPontos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(196, 206, 204);
+    text-shadow: black 0.1em 0.0em 0.1em;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+@media(max-width: 800px){
+    .conteudoPontos {
+        height: 150px;
+        font-size: 17px;
+    }
+}
+@media(max-width: 600px){
+    .conteudoPontos {
+        height: 100px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 320px){
+    .conteudoPontos {
+        height: 80px;
+        font-size: 10px;
+    }
+}
+@media(max-width: 200px){
+    .conteudoPontos {
+        height: 60px;
+        font-size: 6px;
+    }
+}
+.imgPontos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-size: cover;
+    justify-content: center;
+    width: 33.333%;
+    height: 98%;
+    border: 1px;
+    border-style: dashed;
+    cursor: pointer;
+}
 
+.imgDionisio {
+    background-image: url(img/euAmoDionisioCerqueira.jpeg);
+}
 
+.imgBarracao {
+    background-image: url(img/capelaBarracao.jpeg);
+}
 
+.imgBernardo {
+    background-image: url(img/bernardo.jpeg);
+}
+@media(max-width: 800px){
+    .imgPontos {
+        height: 150px;
+    }
+}
+@media(max-width: 600px){
+    .imgPontos {
+        height: 100px;
+    }
+}
+@media(max-width: 320px){
+    .imgPontos {
+        height: 80px;
+    }
+}
+@media(max-width: 200px){
+    .imgPontos {
+        height: 60px;
+    }
+}
 
+.conteudoVMV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(236, 236, 236)
+    
+}
 
+.VMV {
+    display: flex;
+    width: 33.333%;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+}
 
+@media (max-width:600px) {
+    .VMV {
+        font-size: 15px;
+        margin-top: 10%;
+    }
+}
+@media (max-width:380px) {
+    .VMV {
+        font-size: 12px;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:290px) {
+    .VMV {
+        font-size: 10px;
+        margin-top: 10%;
+    }
+}
+
+.imgVMV {
+    margin: 10%;
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.iconeWhats {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .iconeWhats {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.conteudoReserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, rgb(196, 206, 204), rgb(82, 196, 177));
+}
+
+@media (max-width: 600px) {
+    .conteudoReserva {
+        font-size: 13px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 330px) {
+    .conteudoReserva {
+        font-size: 10px;
+        height: 200px;
+    }
+}
 
 .teste {
     display: flex;
@@ -545,17 +936,18 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
 .copyright {
+    display: flex;
+    justify-content: center;
     font-size: 12px;
+    margin-top: 30px;
 }
 .referencia {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 10px;
+    margin-top: 10px;
 }

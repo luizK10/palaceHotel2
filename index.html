@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./index.js">
 </head>
-<body>
+<body  onload="siteEmConstrucao()">
+
+
+
     <div class="contatos">
         <div class="telefone">
             <img src="./icons/call_FILL0_wght400_GRAD0_opsz24(1).png" alt="" class="iconeContato">(049) 3644 1748
@@ -50,19 +53,21 @@
             </div>
         </div>
         
-        <div class="titulo"><b>PALACE HOTEL</b>
+        <div class="titulo" id="idHome"><b>PALACE HOTEL</b>
         </div>
     </div>
-    <div class="menu">
-        <div class="menuItem menuItemHome"    onmouseclick="alteraCorBotao('menuItemHome')"    onmouseenter="alteraCorBotao('menuItemHome')"    onmouseout="voltaCor('menuItemHome')">    HOME</div>
-        <div class="menuItem menuItemQuartos" onmouseclick="alteraCorBotao('menuItemQuartos')" onmouseenter="alteraCorBotao('menuItemQuartos')" onmouseout="voltaCor('menuItemQuartos')"> <a class="linkQuartos" href="#idQuartos">QUARTOS</a> </div> 
-        <div class="menuItem menuItemLocal"   onmouseclick="alteraCorBotao('menuItemLocal')"   onmouseenter="alteraCorBotao('menuItemLocal')"   onmouseout="voltaCor('menuItemLocal')">   LOCAL</div>
-        <div class="menuItem menuItemReserva" onmouseclick="alteraCorBotao('menuItemReserva')" onmouseenter="alteraCorBotao('menuItemReserva')" onmouseout="voltaCor('menuItemReserva')"> RESERVA</div>
+    <div class="menu" id="idMenu">
+        <div class="menuItem menuItemHome"    onmouseclick="alteraCorBotao('menuItemHome')"    onmouseenter="alteraCorBotao('menuItemHome')"    onmouseout="voltaCor('menuItemHome')">    <a class="linkMenu" href="#idHome">HOME        </a> </div>
+        <div class="menuItem menuItemQuartos" onmouseclick="alteraCorBotao('menuItemQuartos')" onmouseenter="alteraCorBotao('menuItemQuartos')" onmouseout="voltaCor('menuItemQuartos')"> <a class="linkMenu" href="#idQuartos">QUARTOS  </a> </div> 
+        <div class="menuItem menuItemLocal"   onmouseclick="alteraCorBotao('menuItemLocal')"   onmouseenter="alteraCorBotao('menuItemLocal')"   onmouseout="voltaCor('menuItemLocal')">   <a class="linkMenu" href="#idLocal">LOCAL      </a></div>
+        <div class="menuItem menuItemReserva" onmouseclick="alteraCorBotao('menuItemReserva')" onmouseenter="alteraCorBotao('menuItemReserva')" onmouseout="voltaCor('menuItemReserva')"> <a class="linkMenu" href="#idReserva">RESERVA  </a></div>
+        <div class="menuItem menuItemGaleria" onclick="abreGaleria()"                          onmouseenter="alteraCorBotao('menuItemGaleria')" onmouseout="voltaCor('menuItemGaleria')"> <a class="linkMenu" href="#idGaleria">GALERIA  </a></div>
     </div>
     <div class="conteudo">
         <div class="conteudoHome">
             <div class="conteudoHomeCentral">
-                Simplicidade e conforto <br> esperam por você!
+                Seja bem vindo! <br>
+                <!--Simplicidade e conforto <br> esperam por você!-->
             </div>
             
             
@@ -101,22 +106,114 @@
             </div>        
         </div>
         <div class="conteudoQuartos" id="idQuartos">
-            <figure class="quarto quartoCasal"          onclick="janelaQuartos('2Solteiros')"><b>Casal</b> </figure>
-            <figure class="quarto quartoCasal1Solteiro "onclick="janelaQuartos('2Solteiros')"><b>Casal e 1 Solteiro</b></figure>
-            <figure class="quarto quarto2Solteiros"     onclick="janelaQuartos('2Solteiros')"><b>2 Solteiros</b></figure>
+            <figure class="quarto quartoCasal"          onclick="janelaQuartos('2Solteiros')"><b>Casal              </b> </figure>
+            <figure class="quarto quartoCasal1Solteiro "onclick="janelaQuartos('2Solteiros')"><b>Casal e 1 Solteiro </b></figure>
+            <figure class="quarto quarto2Solteiros"     onclick="janelaQuartos('2Solteiros')"><b>2 Solteiros        </b></figure>
             <figure class="quarto quartoCasal2Solteiros"onclick="janelaQuartos('2Solteiros')"><b>Casal e 2 solteiros</b></figure>
-            <figure class="quarto quartoSolteiro"       onclick="janelaQuartos('2Solteiros')"><b>Solteiro</b></figure>
-            <figure class="quarto quartoOutros"         onclick="janelaQuartos('2Solteiros')"><b>Outros</b></figure>
+            <figure class="quarto quartoSolteiro"       onclick="janelaQuartos('2Solteiros')"><b>Solteiro           </b></figure>
+            <figure class="quarto quartoOutros"         onclick="janelaQuartos('2Solteiros')"><b>Outros             </b></figure>
         </div>
+        <div></div>
+
+        <div class="conteudoLocal" id="idLocal">
+            <div class="localizacao">
+                <div class="localTitulo">Localização</div>
+            
+                <div class="divIconeMapa">
+                        <img class="iconeMapa" src="icons/mapavermelho.png" alt="">
+                </div>
+                <div class="textoLocal">
+                    <ul>
+                        <li>Rua 7 de Setembo, 809 - Centro</li>
+                        <li>Dionísio Cerqueira - SC</li>
+                        <li>CEP:85.700-000</li>
+                        <li>Contato: (049)3644-1748</li>
+                    </ul>
+                </div>
+            </div>       
+        
+            <div class="divMapa">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8510.425868012831!2d-53.64003380082555!
+                            3d-26.255389042521312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46a188c9ff26275f!2sPalace%20H
+                            otel!5e0!3m2!1spt-BR!2sbr!4v1662481865923!5m2!1spt-BR!2sbr" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="conteudoPontos">
+            <div class="imgPontos imgDionisio" onclick='abreSite("https://www.dionisiocerqueira.sc.gov.br")'>
+                    <b>Dionísio Cerqueira - SC</b>
+            </div>
+            <div class="imgPontos imgBarracao" onclick="abreSite('https://barracao.pr.gov.br')">
+                <figure>
+                    <b>Barracão - PR</b>
+                </figure>
+            </div>
+            <div class="imgPontos imgBernardo" onclick="abreSite('https://pt.wikipedia.org/wiki/Bernardo_de_Irigoyen')">
+                <figure>
+                    <b>Bernardo de Irigoyem - Argentina</b>
+                </figure>
+            </div>
+        </div>
+
+
+        <div class="conteudoVMV">
+            <div class="visao VMV">
+                <b>Visão</b> <br> <br>
+                <img class="imgVMV" src="icons/visao.png" alt="">
+                Ser a melhor opção de hospedagem da região da tŕiplice 
+                fronteira para clientes que buscam repouso confortável
+                 com simplicidade e excelente relação entre custo e 
+                 benefício.
+            </div>
+            <div class="missao VMV">
+                <b>Missão</b> <br>
+                <img class="imgVMV" src="icons/missao.png" alt="">
+                Oferecer serviços de hospedagem com atendimento rápido, 
+                simples e sem burocracia prezando pelo bom atendimento, 
+                higiene e conforto com preços acessíveis.
+            </div>
+            <div class="valores VMV">
+                <b>Valores</b> <br> <br> 
+                <img class="imgVMV" src="icons/valor.png" alt="">
+                Honestidade; Simplicidade; Tradição; Prestatividade e Liberdade.
+            </div>
+        </div>
+
+
+        <div class="conteudoReserva" id="idReserva">
+            
+            As nossas reservas são feitas através de contato telefônico:
+            <br>
+            <br>
+            <li>(049) 3644 1748</li>
+            <br>
+            <li>(049)99159 6632 </li>
+            <br>
+            Clique na ícone abaixo para reservar pelo WhatsApp:
+            <br>
+            <img class="iconeWhats" src="icons/iconeWhats.png" alt="" onclick="abreWhats()">
+            <br>
+            <br>
+        </div>
+
+        
     </div>
     <footer>
         <div class="copyright">Copyright (2022) - Luiz A. K. Ferrarese</div>
             <div class="referencia">
-                <a href="https://www.flaticon.com/br/icones-gratis/nao-fume" title="não fume ícones">Não fume ícones criados por Freepik - Flaticon</a> <br>
-                <a href="https://www.flaticon.com/br/icones-gratis/sem-animais" title="sem animais ícones">Sem animais ícones criados por Freepik - Flaticon</a> <br>
-                <a href="https://www.flaticon.com/br/icones-gratis/recepcao" title="recepção ícones">Recepção ícones criados por Vitaly Gorbachev - Flaticon</a> <br>
+                <a href="creditos.html">Créditos</a>
+                
+                
             </div>
         
     </footer>
 </body>
 </html>
+
